@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "SVG360 - Done-For-You Cold Email That Books Calls",
+  description: "Turn cold leads into booked calls on autopilot. SVG360 handles targeting, outreach, and appointment setting so you can focus on closing deals.",
 };
 
 import PageIllustration from "@/components/page-illustration";

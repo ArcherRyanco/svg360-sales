@@ -22,30 +22,37 @@ export default function Footer() {
         
         <div className="py-8 md:py-12">
           {/* Main footer content */}
-          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
             
             {/* Left side - Logo and tagline */}
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-start lg:max-w-xs">
               <Logo />
-              <p className="mt-4 text-sm text-indigo-200/65 max-w-xs">
+              <p className="mt-4 text-sm text-indigo-200/65">
                 Done-for-you cold email that books qualified calls on autopilot.
               </p>
             </div>
 
-            {/* Right side - Contact / Email Us */}
-            <div className="space-y-3">
-              <h3 className="text-sm font-medium text-gray-200">Get In Touch</h3>
-              {/* 
-                TODO: Replace with lead embed form
-                Example: HubSpot, GHL, or custom form embed
-              */}
-              <div className="text-sm text-indigo-200/65">
-                <a 
-                  href="mailto:hello@svgdigital.com" 
-                  className="transition hover:text-indigo-500"
-                >
-                  hello@svgdigital.com
-                </a>
+            {/* Right side - Contact Form */}
+            <div className="lg:w-[400px]">
+              <h3 className="text-sm font-medium text-gray-200 mb-3">Get In Touch</h3>
+              <div className="rounded-lg overflow-hidden" style={{ height: '400px' }}>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/fkkuaqH4QoNBLWdtsMFM"
+                  style={{ width: '100%', height: '100%', border: 'none', borderRadius: '4px' }}
+                  id="inline-fkkuaqH4QoNBLWdtsMFM"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Ignite360 Contact Form"
+                  data-height="400"
+                  data-layout-iframe-id="inline-fkkuaqH4QoNBLWdtsMFM"
+                  data-form-id="fkkuaqH4QoNBLWdtsMFM"
+                  title="Ignite360 Contact Form"
+                />
               </div>
             </div>
           </div>
@@ -58,6 +65,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      {/* GHL Form Script */}
+      <script src="https://link.msgsndr.com/js/form_embed.js" async />
     </footer>
   );
 }
